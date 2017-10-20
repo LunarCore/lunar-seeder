@@ -362,7 +362,8 @@ static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
-    db.Add(CService("ec2-54-187-232-12.us-west-2.compute.amazonaws.com", 6612), true);
+    db.Add(CService("ec2-54-186-57-132.us-west-2.compute.amazonaws.com", 6612), true);
+    db.Add(CService("ec2-54-213-241-197.us-west-2.compute.amazonaws.com", 6612), true);
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
